@@ -1,0 +1,58 @@
+/* Plc */
+.plc {
+	background: #00483d;
+	/* overflow: hidden; */
+	font-size: 15px;
+	color: #333;
+	border-top: none;
+	border-bottom: none;
+}
+
+.plc ul {
+	width: 100%;
+}
+
+.plc li {
+	width: 20%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	line-height: 20px;
+	border-right: none;
+	margin: 5px 0;
+	color: antiquewhite
+}
+
+.plc li:last-child {
+	border-right: none;
+}
+
+/* ============= Footer ============= */
+.footer {
+	position: relative;
+	/* height: 40px; */
+	width: 100%;
+	background: #476;
+}
+
+.copy-right {
+	/* position: absolute; */
+	/* bottom: 0; */
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	color: #ccc;
+	background-color: #00483d;
+}
+
+.copy-right a {
+	color: #ccc;
+	transition: .2s ease;
+}
+
+.copy-right a:hover {
+	color: #fff;
+}
+
+/* ======= End Footer ======== */

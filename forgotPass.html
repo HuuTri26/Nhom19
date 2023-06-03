@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nhom19_web-user</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/dungchung.js"></script>
+    <script>
+        /* window.onload = function () {
+             khoiTao();
+         }*/
+         function closeBtn() {
+            showTaiKhoan(false);
+            window.location.replace("index.html");
+         }
+    </script>
+    <style>
+        .tab-content-forgot>div {
+            display: none;
+        }
+
+        .tab-content-forgot>div.active {
+            display: block !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script> addTopNav(); </script>
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+    <div class="containTaikhoan" style="transform: scale(1);">
+        <span class="close" onclick="closeBtn() ;">&times;</span>
+        <div class="taikhoan" style="background-color: #fff;">
+            <div class="tab-content-forgot">
+                <div id="validateEmail" class="active">
+                    <h1 style="color: #000;">Vui lòng xác nhận email của bạn</h1>
+
+                    <form onsubmit="return forgotPass(this);">
+
+                        <div class="field-wrap">
+                            <input style="color: #000;" name="email" type="email" required="" autocomplete="off"
+                                placeholder="Địa chỉ email">
+                            <label for="auth" class="auth" style="color: #000; left: 0;"></label>
+                            <input style="color: #000; margin-top: 35px;" name="auth" type="text" required=""
+                                autocomplete="off" placeholder="Mã xác thực">
+                        </div> <!-- /email -->
+                        <a href="index.html">Quay về trang chủ</a>
+                        <button type="submit" class="button button-block">Xác nhận1</button>
+                    </form> <!-- /form -->
+                </div> <!-- /log in -->
+                <div id="forgotPass">
+                    <h1 style="color: #000;">Nhập mật khẩu mới</h1>
+
+                    <form onsubmit="return passChange(this);">
+                        <div class="field-wrap">
+                            <label style="color:#777">
+                                Mật khẩu mới<span class="req">*</span>
+                            </label>
+                            <input style="color: #000;" name="pass" type="password" required="" autocomplete="off">
+                        </div> <!-- /pass -->
+                        <button type="submit" class="button button-block">Đổi mật khẩu</button>
+
+                    </form> <!-- /form -->
+
+                </div>
+            </div><!-- tab-content -->
+
+        </div> <!-- /taikhoan -->
+    </div>
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+    <footer style="position: absolute; bottom: 0;">
+        <script>
+            addFooter();
+        </script>
+    </footer>
+</body>
+<script src="js/forgotpass.js"></script>
+
+</html>

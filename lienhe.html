@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nhom19_web-user</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/lienhe.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+    <script src="js/dungchung.js"></script>
+    <script src="js/lienhe.js"></script>
+    <script src="js/classes.js"></script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="body-lienhe">
+            <div class="lienhe-header">Liên hệ</div>
+            <div class="lienhe-info">
+                <div class="info-left">
+                    <p>
+                    <h2 style="color: gray"> NHÓM 19 </h2><br />
+                    <b>Địa chỉ:</b> 97 Man Thiện, Phường Hiệp Phú, Thành Phố Thủ Đức<br /><br />
+                    <b>Telephone:</b> xxx xxxx xxx<br /><br />
+                    <b>Hotline:</b> xxx xxxx xxx - CSKH: xxx xxxx xxx<br /><br />
+                    <b>Website:</b> <a href="https://github.com/hungp03/BoostStore">Github</a> <br /><br />
+                    <b>E-mail:</b> DoAn@gmail.com<br /><br />
+                    <b>Mã số thuế:</b> 0123456543210<br /><br />
+                    <b>Tài khoản ngân hàng :</b><br /><br />
+                    <b>Số TK:</b> 01234567890 <br /><br />
+                    <b>Tại Ngân hàng:</b> TP bank<br /><br /><br /><br />
+                    <b>Cảm ơn quý khách đã tin tưởng sử dụng dịch vụ của chúng tôi. Mọi thắc mắc quý khách vui lòng liên hệ bộ phận CSKH. Hân hạnh phục vụ và chân thành
+                        cảm ơn sự quan tâm, đóng góp ý kiến đến Nhóm 19.</b>
+                    </p>
+                </div>
+                <div class="info-right">
+                    <iframe height="450px" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=97 Man Thien&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    <br />
+                </div>
+            </div>
+            <div class="lienhe-info">
+
+                
+                <div class="thongtinnhom">
+                    <p style="font-size: 22px; color: gray">Thông tin thành viên nhóm: </p>
+                    <hr />
+                    <table>
+                        <tr>
+                            <th>Họ tên</th>
+                            <th>MSSV</th>
+                            <th>Giới tính</th>
+                            <th>Lớp</th>
+                        </tr>
+                        <script>
+                            var thongtin = [
+                                ["Phạm Văn Hùng", "N21DCCN035", "Nam", "D21CQCN01-N"],
+                                ["Bùi Hữu Trí", "N21DCAT058", "Nam", "D21CQAT01-N"],
+                                ["Vũ Gia Huy", "N21DCCN039", "Nam", "D21CQCN01-N"],
+                                ["Hồ Anh Tuấn", "N21DCCN089", "Nam", "D21CQCN01-N"]
+                            ]
+                            for (var i = 0; i < thongtin.length; i++) {
+                                document.write(
+                                    `
+                                    <tr>
+                                        <td>` +
+                                    thongtin[i][0] + `</td>
+                                        <td>` +
+                                    thongtin[i][1] + `</td>
+                                        <td>` +
+                                    thongtin[i][2] + `</td>
+                                        <td>` +
+                                    thongtin[i][3] + `</td>
+                                
+                                    </tr>
+                                `
+                                )
+                            }
+                        </script>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        addContainTaiKhoan();
+    </script>
+
+    <div class="footer">
+        <script>
+            // addPlc();
+            addFooter();
+        </script>
+
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>
